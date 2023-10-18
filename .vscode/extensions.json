@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "rohit-gohri.format-code-action",
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "tintinweb.vscode-inline-bookmarks",
+    "esbenp.prettier-vscode",
+    "stkb.rewrap",
+    "foxundermoon.shell-format"
+  ]
+}

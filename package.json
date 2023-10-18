@@ -1,0 +1,59 @@
+{
+  "name": "inspect-utils",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Utilities for adding custom inspect information to objects",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    "types": "./src/index.ts",
+    "default": "./src/index.ts"
+  },
+  "publishConfig": {
+    "exports": {
+      "types": "./dist/index.d.ts",
+      "modules": "./dist/index.js",
+      "production": "./dist/index.production.js",
+      "development": "./dist/index.development.js",
+      "debug": "./dist/index.development.js",
+      "import": "./dist/index.development.js",
+      "default": "./dist/index.development.js"
+    },
+    "main": "dist/index.development.js",
+    "types": "dist/index.d.ts"
+  },
+  "starbeam:entry": "src/index.ts",
+  "scripts": {
+    "ci:lint": "eslint . --max-warnings 0",
+    "ci:specs": "vitest --run",
+    "ci:types": "tsc -b",
+    "prepare": "rollup -c",
+    "test:specs": "vitest --ui"
+  },
+  "dependencies": {
+    "@starbeam-dev/core": "file:.yalc/@starbeam-dev/core"
+  },
+  "devDependencies": {
+    "@esbuild-kit/esm-loader": "^2.6.5",
+    "@starbeam-dev/compile": "file:.yalc/@starbeam-dev/compile",
+    "@starbeam-dev/eslint-plugin": "^1.0.2",
+    "@swc/helpers": "^0.5.3",
+    "@types/node": "^20.8.6",
+    "@vitest/ui": "^1.0.0-beta.2",
+    "eslint": "^8.51.0",
+    "esyes": "^1.0.1",
+    "typescript": "^5.2.2",
+    "vite-env": "^1.0.0",
+    "vitest": "^1.0.0-beta.2"
+  },
+  "files": [
+    "dist/*"
+  ],
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "vitest": "1"
+      }
+    }
+  }
+}

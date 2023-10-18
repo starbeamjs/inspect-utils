@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "module": "es2022",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "noImplicitAny": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "target": "ESNext",
+    "types": ["node", "vite-env"],
+    "verbatimModuleSyntax": true
+  },
+  "exclude": ["dist"]
+}
